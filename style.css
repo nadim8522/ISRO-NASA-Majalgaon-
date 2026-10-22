@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Jameel;
+    src: url("../fonts/JameelNooriNastaleeq.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+    background: linear-gradient(
+        135deg,
+        #071952,
+        #0B666A,
+        #35A29F
+    );
+
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.container {
+
+    width: 100%;
+    max-width: 500px;
+
+}
+
+
+.card {
+
+    background: rgba(255,255,255,0.95);
+
+    border-radius: 20px;
+
+    padding: 30px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
+
+}
+
+
+h1 {
+
+    color: #071952;
+
+    font-size: 32px;
+
+    margin-bottom: 10px;
+
+}
+
+
+h3 {
+
+    color:#0B666A;
+
+    margin-bottom:20px;
+
+}
+
+
+.designer {
+
+    line-height:1.7;
+
+    color:#444;
+
+    margin-bottom:20px;
+
+}
+
+
+hr {
+
+    margin:20px 0;
+
+}
+
+
+h2 {
+
+    color:#071952;
+
+    margin-bottom:20px;
+
+}
+
+
+label {
+
+    display:block;
+
+    text-align:left;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+}
+
+
+input,
+select {
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:10px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+
+button {
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#071952;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+button:hover {
+
+    background:#0B666A;
+
+    transform:scale(1.03);
+
+}
+
+
+/* Urdu text support */
+
+.urdu {
+
+    font-family:Jameel, serif;
+
+    direction:rtl;
+
+    text-align:right;
+
+    font-size:24px;
+
+}
+
+
+/* Mobile view */
+
+@media(max-width:600px){
+
+    .card{
+
+        padding:20px;
+
+    }
+
+
+    h1{
+
+        font-size:26px;
+
+    }
+
+}
