@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRO–NASA Screening Test</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>ISRO–NASA Screening Test</h1>
+        <h3>Practice Test</h3>
+
+        <p class="designer">
+            Designed by<br>
+            <b>Syed Nadimuddin Kalimuddin Jafri</b><br>
+            Z.P.P. Urdu School, Nitrud
+        </p>
+
+        <hr>
+
+        <h2>Student Information</h2>
+
+        <form id="studentForm">
+
+            <label>Student Name</label>
+            <input type="text" id="studentName" placeholder="Enter your name" required>
+
+
+            <label>Class</label>
+            <select id="studentClass" required>
+                <option value="">Select Class</option>
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+            </select>
+
+
+            <label>School Name</label>
+            <input type="text" id="schoolName" placeholder="Enter school name" required>
+
+
+            <label>Taluka</label>
+            <input type="text" id="taluka" placeholder="Enter taluka" required>
+
+
+            <button type="submit">
+                Continue
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script>
+
+document.getElementById("studentForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    localStorage.setItem("studentName",
+        document.getElementById("studentName").value);
+
+    localStorage.setItem("studentClass",
+        document.getElementById("studentClass").value);
+
+    localStorage.setItem("schoolName",
+        document.getElementById("schoolName").value);
+
+    localStorage.setItem("taluka",
+        document.getElementById("taluka").value);
+
+
+    window.location.href="quiz.html";
+
+});
+
+</script>
+
+
+</body>
+</html>
